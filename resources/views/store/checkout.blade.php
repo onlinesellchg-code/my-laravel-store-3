@@ -1,0 +1,5 @@
+@extends('layouts.store')
+@section('content')
+<div class="head"><div><small>مرحله نهایی</small><h2>ثبت اطلاعات سفارش</h2></div></div>
+<form method="POST" action="{{ route('checkout.submit') }}">@csrf<div class="checkout"><div class="card cardpad"><div class="formgrid"><div class="formgroup"><label>نام و نام خانوادگی</label><input class="input" name="customer_name" value="{{ old('customer_name') }}" required></div><div class="formgroup"><label>شماره موبایل</label><input class="input" name="phone" value="{{ old('phone') }}" required></div><div class="formgroup"><label>ایمیل</label><input class="input" name="email" value="{{ old('email') }}"></div><div class="formgroup full"><label>آدرس</label><textarea class="input" name="address" rows="4" required>{{ old('address') }}</textarea></div><div class="formgroup full"><label>یادداشت</label><textarea class="input" name="notes" rows="3">{{ old('notes') }}</textarea></div></div></div><div class="card cardpad"><h3>اطلاعات فروشگاه</h3><p>{{ $settings['store_name'] }}</p><p>{{ $settings['store_phone'] }}</p><button class="btn" style="width:100%;margin-top:20px">ثبت سفارش</button></div></div></form>
+@endsection

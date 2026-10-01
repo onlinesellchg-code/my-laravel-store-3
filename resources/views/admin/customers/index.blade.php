@@ -1,0 +1,2 @@
+@extends('layouts.admin',['title'=>'مشتریان'])
+@section('content')<div class="card"><div class="tablewrap"><table class="table"><thead><tr><th>نام</th><th>تلفن</th><th>ایمیل</th></tr></thead><tbody>@forelse($customers as $c)<tr><td>{{ $c->customer_name }}</td><td>{{ $c->phone }}</td><td>{{ $c->email ?: '-' }}</td></tr>@empty<tr><td colspan="3">مشتری ثبت نشده.</td></tr>@endforelse</tbody></table></div></div>@endsection

@@ -1,0 +1,1 @@
+<!doctype html><html lang="fa" dir="rtl"><body style="font-family:Tahoma,Arial;text-align:center;background:#f8fafc;padding:80px"><h1>404</h1><p>صفحه مورد نظر پیدا نشد.</p><a href="/" style="color:#2563eb">بازگشت به فروشگاه</a></body></html>
